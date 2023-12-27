@@ -34,8 +34,8 @@ export default defineConfig({
         description: '让V2EX现代化。支持楼中楼、简洁模式、高赞回复排序、发送图片和表情、base64 解码等功能',
         author: 'zyronon',
         license: 'GPL License',
-        updateURL: 'https://github.com/zyronon/v2ex-script/raw/master/dist/vite-project.user.js',
-        downloadURL: 'https://github.com/zyronon/v2ex-script/raw/master/dist/vite-project.user.js',
+        // updateURL: 'https://github.com/zyronon/v2ex-script/raw/master/dist/vite-project.user.js',
+        // downloadURL: 'https://github.com/zyronon/v2ex-script/raw/master/dist/vite-project.user.js',
       },
       build: {
         externalGlobals: {

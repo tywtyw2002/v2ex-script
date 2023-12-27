@@ -899,12 +899,13 @@ function run() {
       }
 
 
-      .Night .post-item {
-          background: #18222d !important;
-      }
+      // .Night .post-item {
+      //     background: #18222d !important;
+      // }
 
       .Night .preview {
-          border: 1px solid #3b536e;
+          border: 1px solid rgba(84, 84, 88, 0.6);
+          background: rgba(28, 28, 30, 0.9);
       }
 
       .Night .preview > .post-content:link {
@@ -914,11 +915,11 @@ function run() {
       .Night .preview > .post-content:visited {
           color: #393f4e !important;
       }
-      
+
       .Night .preview  .topic-link:link {
           color: #c0dbff !important;
       }
-      
+
       ${
       window.config.simple ? `
       ${window.pageType !== PageType.Member ? `
@@ -929,7 +930,7 @@ function run() {
       .item {border-bottom:none;}
       .avatar,#avatar{display:none;}
       ` : ''}
-      
+
       #Logo {background-image:url('https://i.imgur.com/i9VgUtM.png');}
        .bigger a, .top:nth-last-child(5){color: transparent!important;text-shadow: #b0b0b0 0 0 6px;user-select: none;}
       // .bigger a:before,.top:nth-last-child(5):before{content:'Mona Lisa';position: absolute;background: white;}

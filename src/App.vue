@@ -612,8 +612,8 @@ export default {
 
   .open-post, .nav {
     color: white;
-    background: #18222d;
-    border-bottom: 1px solid #22303f;
+    background: rgba(34, 34, 36, 0.8);
+    border-bottom: none;
   }
 }
 

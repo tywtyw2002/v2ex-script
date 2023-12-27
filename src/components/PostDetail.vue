@@ -595,12 +595,13 @@ export default {
   }
 
   &.isNight {
-    background: rgba(46, 47, 48, .8);
+    background: transparent;
+    backdrop-filter: blur(10px);
 
     .main {
-      background: #22303f;
+      background: transparent;
 
-      @bg: #18222d;
+      @bg: rgba(14, 14, 15, 0.9);
       @bg1: #22303f;
       @line: #22303f;
       @text: #d1d5d9;
@@ -640,7 +641,7 @@ export default {
       }
 
       :deep(.subtle) {
-        background-color: rgb(26,51,50);
+        background-color: rgba(28, 28, 30, 0.9);
         border-left: 4px solid #047857;
 
       }
@@ -649,7 +650,7 @@ export default {
         border-bottom: 1px solid @line !important;
       }
 
-      @line-color: #22303f;
+      @line-color: rgba(84, 84, 88, 0.6);
 
       :deep(.isLevelOne) {
         border-bottom: 1px solid @line-color;
@@ -748,7 +749,16 @@ export default {
 
       .scroll-to, .close-btn, .scroll-top, .top-reply {
         //color: rgb(72, 98, 126);
+        background: rgba(0,0,0,0.6);
         color: #9caec7;
+      }
+
+      .scroll-to {
+        input {
+          background: rgba(28, 28, 30, 0.9);
+          border: 1px solid @line-color;
+          color: #d1d5d9;
+        }
       }
 
       :deep(.tool) {
