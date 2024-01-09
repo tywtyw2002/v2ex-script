@@ -191,6 +191,10 @@ export default {
 
   @line-color: #ececec;
 
+  &:last-child {
+    border-bottom: none;
+  }
+
   &.isLevelOne {
     border-bottom: 1px solid @line-color;
     padding: .8rem 1rem;

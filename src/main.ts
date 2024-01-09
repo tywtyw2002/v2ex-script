@@ -899,12 +899,14 @@ function run() {
       }
 
 
-      // .Night .post-item {
-      //     background: #18222d !important;
-      // }
+      /*
+      .Night .post-item {
+           background: #18222d !important;
+      }
+      */
 
       .Night .preview {
-          border: 1px solid rgba(84, 84, 88, 0.6);
+          border: none !important;
           background: rgba(28, 28, 30, 0.9);
       }
 

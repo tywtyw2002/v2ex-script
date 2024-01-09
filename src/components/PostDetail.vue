@@ -600,6 +600,7 @@ export default {
 
     .main {
       background: transparent;
+      padding: 3rem 1rem 15rem 1rem;
 
       @bg: rgba(14, 14, 15, 0.9);
       @bg1: #22303f;
@@ -709,19 +710,19 @@ export default {
       }
 
       .editor-wrapper {
-        background: #393f4e !important;
+        // background: #393f4e !important;
       }
 
       :deep(.post-editor-wrapper) {
         //border: 1px solid #507092;
         .post-editor {
-          background: @bg;
+          background: rgba(28, 28, 30, 0.9);
           border: transparent;
           color: white;
         }
 
         .toolbar {
-          background: #393f4e !important;
+          // background: #393f4e !important;
         }
       }
 

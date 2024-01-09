@@ -569,7 +569,7 @@ export default {
   <MsgModal/>
 
   <div class="toolbar" v-if="!stopMe && config.showToolbar" :class="[isNight?'isNight':'',config['viewType']]">
-    <div class="nav flex flex-end" v-if="isList">
+    <div class="nav flex flex-end list-switch" v-if="isList">
       <div class="radio-group2" :class="{isNight}">
         <div class="radio"
              @click="config.viewType = 'table'"
@@ -615,11 +615,20 @@ export default {
     background: rgba(34, 34, 36, 0.8);
     border-bottom: none;
   }
+
+  .target-user-tags {
+    background: rgba(14, 14, 15, 0.8);
+    box-shadow: none;
+    border: none;
+    color: var(--box-foreground-color);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
 }
 
 .card {
-  border-radius: 0 0 var(--box-border-radius) var(--box-border-radius);
-  overflow: hidden;
+  // border-radius: 0 0 var(--box-border-radius) var(--box-border-radius);
+  // overflow: hidden;
 }
 
 .nav {
@@ -639,6 +648,21 @@ export default {
 
   .add-tag {
     display: inline-block;
+  }
+}
+
+.list-switch {
+  padding: 0 !important;
+  position: relative;
+
+  & > .radio-group2 {
+    position: absolute;
+    display: block;
+    left: -6rem;
+
+    .radio {
+      board: none;
+    }
   }
 }
 </style>
